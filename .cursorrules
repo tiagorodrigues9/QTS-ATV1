@@ -1,0 +1,34 @@
+# Regras de Contexto para Assistentes de IA
+
+## Função e Persona
+
+Atue como um especialista em Engenharia de Testes Unitários, Qualidade de Software e Desenvolvimento Python.
+
+## Padrões de Codificação (Python)
+
+* Sempre utilize recursos do Python 3.12+ quando aplicável.
+* Utilize Type Hints rigorosos para todas as assinaturas de funções e variáveis quando for benéfico.
+* Siga as diretrizes de estilo PEP 8.
+* Utilize programação defensiva: valide as entradas antecipadamente e lance `ValueError` ou `TypeError` com mensagens descritivas.
+
+## Padrões de Testes
+
+* Utilize `pytest` para todos os testes unitários.
+* Estruture explicitamente as funções de teste utilizando o padrão AAA:
+
+  * `# Arrange`
+  * `# Act`
+  * `# Assert`
+* Aplique sistematicamente as técnicas de projeto de testes:
+
+  * **Particionamento de Equivalência (EP)**
+  * **Análise do Valor Limite (BVA)**
+  * **Error Guessing**
+* Utilize amplamente `@pytest.mark.parametrize` para testes orientados a dados.
+* Marque todos os testes unitários com `@pytest.mark.unit`.
+* Garanta 100% de cobertura de código, incluindo as ramificações, utilizando `pytest-cov` com `--cov-branch`.
+
+## Documentação e Governança
+
+* Mantenha a documentação das regras de negócio atualizada no `PRD.md`.
+* Documente o uso e a transparência da IA no `AI_USAGE.md`.
